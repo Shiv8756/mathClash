@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #82ccdd;
+}
+section h1{
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px white;
+
+}
+.centerdiv{
+    width: 500px;
+    height: 400px;
+    background-color: #78e08f ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.insertbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+#v1,#v2{
+    text-align: center;
+    padding: 20px 30px;
+    width: 35px;
+    font-size: 30px;
+    box-shadow: 1px 1px 0px #999,
+    2px 2px 0px #999,
+    3px 3px 0px #999,
+    4px 4px 0px #999,
+    5px 5px 0px #999,
+    6px 6px 0px #999;
+    border: none;
+    outline: none;
+}
+.box1 p{
+    font-size: 60px;
+    margin: 0 8px 0 13px;
+}
+.middlebox #answer{
+    margin: 30px 0;
+    padding: 5px 0;
+    font-size: 30px;
+    text-align: center;
+    width: 180px;
+    border: none;
+    outline: none;
+}
+.sent button{
+    padding: 10px 20px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    columns: white;
+    border: none;
+    background-color: #079992;
+}

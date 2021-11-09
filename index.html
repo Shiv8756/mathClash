@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Clash</title>
+</head>
+<body>
+    <section>
+        <h1>Math Addition Quiz :)</h1>
+        <div class="centerdiv">
+            <div class="insertbox">
+                <div class="box1">
+                    <input type="text" id="v1">
+                </div>
+                <div class="box1">
+                    <p>+</p>
+                </div>
+                <div class="box1">
+                    <input type="text" id="v2">
+                </div>
+               
+            </div>
+            <div class="middlebox">
+                <input type="text" id="answer">
+            </div>
+            <div class="sent">
+                <button onclick="mathGame()">Check Answer</button>
+            </div>
+        </div>
+    </section>
+    <script>
+        let n1 = Math.floor(Math.random()*10 +1);
+        let n2 = Math.floor(Math.random()*10 +1);
+        document.getElementById('v1').value = n1;
+        document.getElementById('v2').value = n2;
+        let ans = n1+n2;
+        // console.log(ans)
+        const mathGame = () =>{
+            let  usera = document.getElementById('answer').value;
+            if(usera == ans){
+                alert("Well Done! Your answer is correct");
+            }
+            else{
+                alert("Correct answer is "+ans+" . Try Again");
+            }
+            document.getElementById('answer').value = '';
+            n1 = Math.floor(Math.random()*10 +1);
+            n2 = Math.floor(Math.random()*10 +1);
+            document.getElementById('v1').value = n1;
+            document.getElementById('v2').value = n2;
+            ans = n1+n2;
+        }
+    </script>
+</body>
+</html>
